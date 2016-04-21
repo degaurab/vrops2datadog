@@ -11,8 +11,14 @@ module Vrops
 
     attr_reader :logger, :config, :vrop_host_config
 
-    def get_resource_identifier(resource_key)
 
+    def start_monitoring
+      #to-do entry point for monitoring from scheduler
+    end
+
+    def get_resource_identifier(resource_key)
+      #to-do get identifier from the json
+      # url: suite-api/api/adapterkinds/EMC/resources
     end
 
     def get_resource_from_adapter(adapter_kind_key)
@@ -22,6 +28,8 @@ module Vrops
     def load_resources
       config.get_resources
     end
+
+
 
     def vrops_request(endpoints)
       response =  HTTParty.get(
