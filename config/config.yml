@@ -1,0 +1,13 @@
+
+---
+
+adapterKindKey:
+- someadapertkind
+resourceKey:
+- name: riakcs
+  resourceKindKey: LUN
+  statKey:
+  - perf|write_iops
+  - perf|read_iops
+  - perf|percent_busy
+
