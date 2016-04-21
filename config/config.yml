@@ -1,9 +1,15 @@
 
 ---
 
-adapterKindKey:
-- someadapertkind
-resourceKey:
+vrops_auth:
+- hostname:
+  username:
+  password:
+
+adapterKind:
+- EMC
+
+resources:
 - name: riakcs
   resourceKindKey: LUN
   statKey:

@@ -15,11 +15,15 @@ module Vrops
     end
 
     def get_adapterkind_keys
-
+      config.fetch('adapterKindKey')
     end
 
     def get_resources
+      config.fetch('resources')
+    end
 
+    def get_vrop_host_config
+      vrop_auth = config.fetch('vrops_auth')
     end
   end
 end
